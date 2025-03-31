@@ -119,4 +119,159 @@ img {
   100% {
     transform: rotate(360deg);
   }
+}
+.contact {
+  margin-top: 40px;
+}
+.contact__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  width: 100%;
+  max-width: 564px;
+  height: auto;
+}
+.left__grid {
+  margin-top: 46px;
+  margin-bottom: 75px;
+  display: grid;
+  gap: 30px;
+}
+.left__card {
+  width: 100%;
+  height: auto;
+  padding: 32px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 0px 30px 0px rgba(43, 42, 40, 0.0784313725);
+  border-radius: 5px;
+}
+.left__card img {
+  width: 62px;
+  height: 62px;
+}
+.left__card__link {
+  color: #CB8734;
+  text-decoration: none;
+}
+.left__card__btn {
+  color: #CB8734;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  text-underline-offset: 4px;
+}
+
+@media only screen and (max-width: 480px) {
+  .contact__container {
+    flex-direction: column;
+  }
+  .hero__top {
+    flex-direction: column;
+  }
+  .hero__btn {
+    visibility: hidden !important;
+  }
+  .left__card {
+    flex-direction: column-reverse;
+    align-items: start;
+    gap: 11px;
+    transition: all 0.3s ease;
+  }
+  .left__card:hover {
+    transform: translateY(-8px);
+  }
+  .left__card__text strong {
+    display: block;
+  }
+}
+.right {
+  width: 100%;
+  max-width: 564px;
+}
+.right__frame {
+  width: 100%;
+  height: auto;
+  padding: 50px 70px;
+  box-shadow: 0px 0px 30px 0px rgba(43, 42, 40, 0.0784313725);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.right__form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.right__inp, .right__input {
+  width: 420px;
+  height: 58px;
+  border-radius: 4px;
+  border: 1px solid #E7D8C7;
+  padding: 20px;
+}
+.right__btn {
+  width: 420px;
+  height: 58px;
+  border-radius: 4px;
+  background-color: #CB8734;
+  color: #FAFAFA;
+  transition: all 0.3s ease;
+}
+.right__btn:hover {
+  transform: scale(1.1);
+}
+.right__btn:active {
+  transform: scale(0.9);
+}
+.right__text {
+  white-space: pre-line;
+}
+.right__link {
+  color: #CB8734;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .right {
+    display: flex;
+    flex-direction: column-reverse !important;
+  }
+  .right__map {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .right__frame {
+    padding: 40px 20px;
+    width: 100%;
+  }
+  .right__inp, .right__input, .right__btn {
+    width: 100%;
+    height: 50px;
+  }
+}
+.details {
+  margin-top: 190px;
+  margin-bottom: 190px;
+}
+.details__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin-top: 26px;
+}
+.details__card {
+  width: 370px;
+  height: 159px;
+  box-shadow: 0px 0px 30px 0px rgba(43, 42, 40, 0.0784313725);
+  padding: 49px 30px;
+  display: flex;
+  gap: 38px;
+  transition: all 0.3s ease;
+}
+.details__card:hover {
+  transform: translateY(-8px);
 }/*# sourceMappingURL=main.css.map */

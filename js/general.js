@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-//! Contact Form Validation
+//! scroll animation section
 
 // document.addEventListener("DOMContentLoaded", function () {
 //   let elements = document.querySelectorAll(

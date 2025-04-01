@@ -1,0 +1,126 @@
+.header {
+    padding: 39px 0 0 0;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__grid {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    &__socials {
+        display: flex;
+        gap: 8px;
+    }
+
+    &__btn {
+        cursor: pointer;
+        padding: 15px 25px;
+        background: linear-gradient(180deg, #F39C32, #CB8734);
+        box-shadow: 0px 4px 4px 0px #CB873433;
+        border-radius: 4px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+
+        &__text {
+            color: #fff;
+        }
+    }
+
+    &__lang {
+        box-shadow: 0px 0px 30px 0px rgba(255, 255, 255, 0.0784313725);
+        background: inherit;
+        border-radius: 4px;
+        height: 23px;
+    }
+
+    &__tel {
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 20px;
+        color: var(--black-color);
+    }
+
+    &__menu {
+        display: none;
+    }
+
+    &__phone {
+        display: none;
+        border: 1px solid #CB8734;
+        width: 30px;
+        height: 30px;
+        border-radius: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .header {
+
+        &__container {
+            align-items: center !important;
+        }
+
+        &__lang,
+        &__grid,
+        &__socials,
+        &__info,
+        .bottom {
+            display: none !important;
+        }
+
+        &__phone,
+        &__menu {
+            display: flex;
+        }
+    }
+}
+
+.bottom {
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__left {
+        width: 620px;
+        height: 72px;
+        background-color: #3D1E19;
+        box-shadow: 0px 0px 20px 0px #2B2A2833;
+        border-radius: 8px;
+        padding: 25px 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 700;
+    }
+
+    &__right {
+        width: 620px;
+        height: 72px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__links {
+        text-decoration: none;
+        color: #000;
+        font-weight: 700;
+    }
+}

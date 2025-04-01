@@ -37,9 +37,18 @@ p {
     color: var(--black-color);
 }
 
+p {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
 a {
     text-decoration: none;
     color: var(--black-color);
+}
+
+pre {
+    white-space: pre-line;
 }
 
 input,

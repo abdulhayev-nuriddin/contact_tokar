@@ -20,26 +20,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //! scroll animation section
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   let elements = document.querySelectorAll(
-//     "*:not(html):not(body):not(meta):not(title):not(head):not(style):not(script):not(main)"
-//   );
-//   let directions = ["from-left", "from-right", "from-top", "from-bottom"];
+document.addEventListener("DOMContentLoaded", function () {
+  let elements = document.querySelectorAll(
+    "*:not(html):not(body):not(meta):not(title):not(head):not(style):not(script):not(main)"
+  );
+  let directions = ["from-left", "from-right", "from-top", "from-bottom"];
 
-//   elements.forEach((el) => {
-//     let randomDirection =
-//       directions[Math.floor(Math.random() * directions.length)];
-//     el.classList.add(randomDirection);
-//   });
+  elements.forEach((el) => {
+    let randomDirection =
+      directions[Math.floor(Math.random() * directions.length)];
+    el.classList.add(randomDirection);
+  });
 
-//   function checkScroll() {
-//     elements.forEach((el) => {
-//       if (el.getBoundingClientRect().top < window.innerHeight * 0.85) {
-//         el.classList.add("show");
-//       }
-//     });
-//   }
+  function checkScroll() {
+    elements.forEach((el) => {
+      if (el.getBoundingClientRect().top < window.innerHeight * 0.85) {
+        el.classList.add("show");
+      }
+    });
+  }
 
-//   window.addEventListener("scroll", checkScroll);
-//   checkScroll();
-// });
+  window.addEventListener("scroll", checkScroll);
+  checkScroll();
+});

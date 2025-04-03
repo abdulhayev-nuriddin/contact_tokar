@@ -52,7 +52,6 @@
     }
 
     &__phone {
-        display: none;
         border: 1px solid #CB8734;
         width: 30px;
         height: 30px;
@@ -60,6 +59,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        display: none;
     }
 }
 
